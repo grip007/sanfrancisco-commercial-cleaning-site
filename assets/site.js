@@ -1,18 +1,1 @@
-const toggle = document.querySelector('.mobile-toggle');
-const nav = document.querySelector('.nav');
-
-if (toggle && nav) {
-  toggle.addEventListener('click', () => nav.classList.toggle('open'));
-}
-
-const quoteFieldOptions = {
-  service: [
-    'Select a service',
-    'Office Cleaning',
-    'Janitorial Services',
-    'Commercial Deep Cleaning',
-    'Move-Out / Turnover Cleaning',
-    'Post-Construction Cleaning',
-    'Retail / Storefront Cleaning',
-    'Medical / Dental Office Cleaning',
-    'Apartment /
+const toggle=document.querySelector('.mobile-toggle');const nav=document.querySelector('.nav');if(toggle&&nav){toggle.addEventListener('click',()=>nav.classList.toggle('open'));}document.querySelectorAll('form[data-success]').forEach(form=>{form.addEventListener('submit',()=>{sessionStorage.setItem('quoteSent','1')})});if(sessionStorage.getItem('quoteSent')==='1'&&location.pathname.includes('thank-you')){sessionStorage.removeItem('quoteSent')}

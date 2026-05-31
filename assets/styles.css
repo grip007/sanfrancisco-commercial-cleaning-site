@@ -30,8 +30,15 @@
 .city-card strong{color:var(--navy);font-size:1.06rem}
 .city-card span{color:var(--muted);font-size:.92rem}
 .city-card:hover{border-color:var(--gold);transform:translateY(-1px)}
+.region-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.region-card{padding:24px;border-radius:24px;background:#f7f9fc;border:1px solid var(--line)}
+.region-card h3{margin:0 0 8px;color:var(--navy);font-size:1.38rem}
+.region-card p{margin:0 0 18px;color:var(--muted)}
+.region-card .city-grid{grid-template-columns:repeat(2,1fr);gap:12px}
+.region-card .city-card{padding:14px;border-radius:18px;box-shadow:0 8px 24px rgba(16,36,62,.04)}
 .cta-band{border-radius:0}
 .cta-band .cta-inner{display:flex;justify-content:space-between;align-items:center;gap:28px;padding-top:42px;padding-bottom:42px}
+.cta-band p a{text-decoration:underline;text-underline-offset:3px}
 .soft-panel{background:#fff;color:var(--ink);box-shadow:var(--shadow)}
 .narrow{max-width:960px}
 .center{text-align:center}
@@ -40,6 +47,12 @@
 .card-kicker{font-size:.82rem;font-weight:900;text-transform:uppercase;letter-spacing:.12em;color:var(--gold)}
 .text-link{display:inline-flex;font-weight:900;color:var(--navy)}
 .text-link:hover{color:var(--navy-2)}
+.link-card{display:block;transition:.18s ease}
+.link-card:hover{border-color:var(--gold);transform:translateY(-2px);box-shadow:0 18px 44px rgba(16,36,62,.12)}
+.frequency-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.frequency-item{padding:16px 18px;border-radius:18px;background:#fff;border:1px solid var(--line);font-weight:800;color:var(--navy);box-shadow:0 10px 28px rgba(16,36,62,.05)}
+.step h3{margin:0 0 8px;color:var(--navy);font-size:1.18rem}
+.step p{margin:0;color:var(--muted)}
 .step span:first-child{width:44px;height:44px;display:grid;place-items:center;border-radius:50%;background:var(--navy);color:#fff;font-weight:900;margin-bottom:14px}
 .footer{background:#0d1e34;color:#dbe6f4;padding:64px 0 28px}
 .footer h3,.footer h4{color:#fff;margin-top:0}
@@ -49,9 +62,9 @@
 .footer-grid{grid-template-columns:1.25fr 1fr 1fr 1fr}
 @media(max-width:980px){
   .split-grid,.footer-grid{grid-template-columns:1fr}
-  .info-grid,.audience-list,.city-grid{grid-template-columns:1fr 1fr}
+  .info-grid,.audience-list,.city-grid,.frequency-grid,.region-grid{grid-template-columns:1fr 1fr}
   .cta-band .cta-inner{flex-direction:column;align-items:flex-start}
 }
 @media(max-width:680px){
-  .info-grid,.audience-list,.city-grid{grid-template-columns:1fr}
+  .info-grid,.audience-list,.city-grid,.frequency-grid,.region-grid,.region-card .city-grid{grid-template-columns:1fr}
 }

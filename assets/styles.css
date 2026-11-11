@@ -201,3 +201,16 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 @media(min-width:981px) and (max-width:1160px){.logo{flex-basis:270px;gap:11px}.logo .brand-name strong{font-size:1.4rem}.logo .brand-emblem{width:60px;height:60px;flex-basis:60px}.logo .brand-byline{font-size:.56rem}}
 @media(max-width:980px){.header-inner{min-height:90px}.logo{flex:0 1 auto}.logo .brand-emblem{width:58px;height:58px;flex-basis:58px}.logo .brand-name strong{font-size:1.45rem}.logo .brand-byline{font-size:.6rem}}
 @media(max-width:440px){.logo{gap:10px}.logo .brand-emblem{width:50px;height:50px;flex-basis:50px}.logo .brand-name strong{font-size:1.2rem}.logo .brand-byline{font-size:.49rem}.workplace-photo>img{aspect-ratio:1/1}}
+
+.image-story{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:48px}
+.image-story h2{font-size:clamp(1.5rem,2.1vw,2rem);line-height:1.25}
+.image-story p{color:var(--muted)}
+.image-story .cleaning-photo img{aspect-ratio:4/3;object-fit:cover}
+.call-section{background:#edf3eb}
+.call-inner{display:flex;justify-content:space-between;align-items:center;gap:32px}
+.call-inner>div:first-child{max-width:650px}
+.call-inner h2{font-size:1.8rem;line-height:1.25}
+.call-inner .hero-actions{flex-shrink:0;flex-direction:column}
+.topbar a{font-weight:750;text-decoration:underline;text-underline-offset:3px}
+.medical-steps li{padding:12px 0}
+@media(max-width:980px){.image-story{grid-template-columns:1fr;gap:26px}.call-inner{display:block}.call-inner .hero-actions{flex-direction:row}}

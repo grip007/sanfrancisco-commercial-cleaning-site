@@ -146,3 +146,44 @@ a[href^="mailto:"]{overflow-wrap:anywhere}
 @media(min-width:981px) and (max-width:1160px){.logo{flex-basis:218px}.nav{gap:9px;font-size:.82rem}.nav .btn{padding:0 13px}.logo .brand-name strong{font-size:.9rem}}
 @media(max-width:980px){.logo{flex:0 1 auto}.logo .brand-mark{width:46px;height:46px;flex-basis:46px}}
 @media(max-width:380px){.logo{gap:7px}.logo .brand-name strong{font-size:.84rem}.logo .brand-byline{font-size:.58rem}}
+
+/* Fobbs Pro green-and-cream direction. */
+:root{--navy:#123f38;--navy-2:#286457;--gold:#086b5b;--gold-2:#075547;--cream:#f8f8f0;--ink:#173f3a;--muted:#506d66;--line:#dbe5db;--radius:16px;--shadow:0 12px 32px rgba(18,63,56,.07)}
+body{background:var(--cream);color:var(--ink)}
+.site-header{background:#f8f8f0f5;border-color:#dde5dc}
+.topbar,.site-footer,.footer{background:#123f38}
+.hero,.page-hero{background:#f8f8f0;color:var(--navy)}
+.hero{padding:64px 0}
+.hero-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:60px}
+.hero h1{font-size:clamp(2rem,3.5vw,3.2rem);line-height:1.15;max-width:20ch;font-weight:650;letter-spacing:-.035em;text-wrap:initial}
+.hero h1 span{color:#528773}
+.hero .eyebrow,.page-hero .eyebrow{background:none;border:0;border-radius:0;padding:0;letter-spacing:.12em;font-size:.72rem;color:#123f38}
+.hero p,.page-hero p{color:#506d66}
+.hero-phone{display:inline-flex;align-items:center;font-weight:750;color:#123f38;padding:12px 4px;white-space:nowrap}
+.btn,.nav-cta{border-radius:5px;box-shadow:none}
+.btn-primary,.nav-cta{background:#086b5b;color:#fff;box-shadow:none}
+.btn-primary:hover,.nav-cta:hover{background:#075547}
+.logo{flex:0 0 260px;gap:13px}
+.brand-letter{display:grid!important;place-items:center;width:48px;height:52px;border-radius:3px;background:#086b5b;color:#fff!important;font-size:1.9rem!important;font-weight:800;letter-spacing:0!important;flex-shrink:0}
+.logo .brand-name strong{font-size:1.2rem;letter-spacing:.04em;line-height:1.1;color:#123f38}
+.logo .brand-byline{color:#123f38;font-size:.6rem;letter-spacing:.16em}
+.nav{font-weight:500;color:#123f38}
+.kicker,.card-kicker{color:#39725e}
+.section.alt,.trust-strip{background:#edf3eb;border-color:#dbe5db}
+.proof-card{background:transparent;border:0;border-radius:0;padding:8px 0}
+.proof-card strong{font-size:.94rem}
+.proof-card span{font-size:.86rem}
+.card,.info-card,.metric-item{border-color:#dbe5db;box-shadow:0 6px 22px rgba(18,63,56,.035)}
+.cta-band{background:#123f38}
+.feature-panel{background:#184d42}
+.feature-panel.soft-panel{background:#fff}
+.workplace-visual{position:relative;align-self:center;padding-bottom:24px}
+.workplace-visual>img{width:100%;height:auto;border-radius:6px 80px 6px 6px}
+.visual-note{position:absolute;left:24px;right:24px;bottom:0;background:#fffdf5;padding:20px 24px;box-shadow:var(--shadow);display:grid;gap:5px}
+.visual-note strong{font-size:1rem}.visual-note span{font-size:.8rem;color:var(--muted)}
+.inquiry-section{background:#edf3eb}
+.inquiry-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.inquiry-grid h2{font-size:2rem;line-height:1.2}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline-color:#286457}
+@media(max-width:980px){.hero-grid,.inquiry-grid{grid-template-columns:1fr;gap:32px}.workplace-visual{max-width:620px}.logo{flex:0 1 auto}.nav{font-weight:600}}
+@media(max-width:680px){.hero{padding:40px 0}.hero h1{font-size:2rem}.logo .brand-name strong{font-size:1.05rem}.logo .brand-byline{font-size:.52rem}.brand-letter{width:40px;height:46px}.visual-note{left:12px;right:12px;padding:16px}.inquiry-grid h2{font-size:1.6rem}}

@@ -187,3 +187,17 @@ body{background:var(--cream);color:var(--ink)}
 a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline-color:#286457}
 @media(max-width:980px){.hero-grid,.inquiry-grid{grid-template-columns:1fr;gap:32px}.workplace-visual{max-width:620px}.logo{flex:0 1 auto}.nav{font-weight:600}}
 @media(max-width:680px){.hero{padding:40px 0}.hero h1{font-size:2rem}.logo .brand-name strong{font-size:1.05rem}.logo .brand-byline{font-size:.52rem}.brand-letter{width:40px;height:46px}.visual-note{left:12px;right:12px;padding:16px}.inquiry-grid h2{font-size:1.6rem}}
+
+/* More visible Fobbs Pro identity and photographic homepage hero. */
+.header-inner{min-height:104px}
+.logo{flex:0 0 315px;gap:15px}
+.logo .brand-emblem{display:block;width:68px;height:68px;flex:0 0 68px}
+.logo .brand-name strong{font-size:1.65rem;letter-spacing:.045em;font-weight:850}
+.logo .brand-byline{font-size:.65rem;letter-spacing:.13em;margin-top:2px}
+.workplace-photo>img{width:100%;height:auto;aspect-ratio:64/53;object-fit:cover;object-position:center;border-radius:24px;background:#e5eee6}
+.workplace-photo .visual-note{bottom:0}
+.visual-note small{font-size:.67rem;color:#506d66}
+.visual-note small a{text-decoration:underline;text-underline-offset:2px}
+@media(min-width:981px) and (max-width:1160px){.logo{flex-basis:270px;gap:11px}.logo .brand-name strong{font-size:1.4rem}.logo .brand-emblem{width:60px;height:60px;flex-basis:60px}.logo .brand-byline{font-size:.56rem}}
+@media(max-width:980px){.header-inner{min-height:90px}.logo{flex:0 1 auto}.logo .brand-emblem{width:58px;height:58px;flex-basis:58px}.logo .brand-name strong{font-size:1.45rem}.logo .brand-byline{font-size:.6rem}}
+@media(max-width:440px){.logo{gap:10px}.logo .brand-emblem{width:50px;height:50px;flex-basis:50px}.logo .brand-name strong{font-size:1.2rem}.logo .brand-byline{font-size:.49rem}.workplace-photo>img{aspect-ratio:1/1}}

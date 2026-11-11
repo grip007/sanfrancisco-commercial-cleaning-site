@@ -113,3 +113,22 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 a[href^="mailto:"]{overflow-wrap:anywhere}
 @media(max-width:980px){.photo-hero{grid-template-columns:1fr;gap:26px}.photo-hero .cleaning-photo{max-width:680px}.photo-hero h1{font-size:clamp(2rem,6vw,3.4rem)}}
 @media(max-width:680px){.photo-gallery{grid-template-columns:1fr;gap:24px}.photo-strip{padding:26px 0}.photo-hero .cleaning-photo img{aspect-ratio:3/2}}
+
+/* Comfortable heading scale across service, city and article pages. */
+.hero h1,.page-hero h1,.photo-hero h1{font-size:clamp(1.85rem,2.6vw,2.65rem);line-height:1.16;letter-spacing:-.025em;font-weight:700;text-wrap:balance}
+.hero h1{max-width:18ch}
+.hero p,.page-hero p{font-size:1.0625rem;line-height:1.65}
+.section-head h2,.content h2,.cta-band h2{font-size:clamp(1.5rem,2.1vw,2rem);line-height:1.25;letter-spacing:-.02em;text-wrap:balance}
+.feature-panel h3{font-size:1.5rem;line-height:1.3}
+.card h3,.content h3,.region-card h3{font-size:1.2rem;line-height:1.35}
+.quote-panel h2{font-size:1.35rem;line-height:1.3}
+.proof-card strong{font-size:1rem;line-height:1.4}
+.hero{padding:62px 0}
+.page-hero{padding:54px 0}
+.section{padding:64px 0}
+@media(max-width:680px){
+  .hero h1,.page-hero h1,.photo-hero h1{font-size:1.85rem;line-height:1.18}
+  .hero p,.page-hero p{font-size:1rem}
+  .hero,.page-hero{padding:40px 0}
+  .section{padding:44px 0}
+}

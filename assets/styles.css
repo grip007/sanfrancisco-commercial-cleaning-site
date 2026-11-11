@@ -82,3 +82,154 @@
   .nav{gap:12px;font-size:.92rem}
   .nav .btn{padding:0 16px}
 }
+
+/* Softer Fobbs Pro palette and illustrative cleaning photography. */
+:root{--navy:#304c60;--navy-2:#476679;--gold:#d5b77d;--gold-2:#e4cfa7;--cream:#f7f4ee;--ink:#243b4a;--muted:#536675;--line:#dce3e5;--shadow:0 12px 32px rgba(48,76,96,.08)}
+body{background:#fdfcf9}
+.hero,.page-hero{background:linear-gradient(120deg,#f5f2ea 0%,#edf3f3 100%);color:var(--navy)}
+.hero p,.page-hero p,.breadcrumbs,.proof-card span{color:var(--muted)}
+.hero .quote-panel p{color:var(--muted)}
+.hero .eyebrow,.page-hero .eyebrow{background:#fff9;border-color:#c7cfc9;color:#425b69}
+.hero .btn-secondary,.page-hero .btn-secondary{color:var(--navy);background:#ffffffb3;border-color:#aebec4}
+.hero .btn-secondary:hover,.page-hero .btn-secondary:hover{background:#fff}
+.proof-card{background:#ffffffa6;border-color:#d6e0df}
+.quote-panel{box-shadow:0 18px 48px rgba(48,76,96,.12)}
+.nav-cta,.btn-primary{box-shadow:0 6px 18px rgba(151,120,65,.14)}
+.logo span,.kicker,.card-kicker{color:#81612e}
+.topbar,.site-footer,.footer{background:#304b5c}
+.section.alt{background:#f2f6f5}
+.card,.metric-item{box-shadow:0 8px 24px rgba(48,76,96,.05)}
+.cta-band{background:linear-gradient(135deg,#365567,#4a6b79)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #88652b;outline-offset:4px}
+.photo-strip{padding:32px 0;background:#fdfcf9}
+.photo-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.cleaning-photo{margin:0;min-width:0}
+.cleaning-photo img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:20px;background:#e2e9e8}
+.cleaning-photo figcaption{padding:9px 2px 0;font-size:.75rem;line-height:1.5;color:#536675}
+.cleaning-photo figcaption a{text-decoration:underline;text-underline-offset:3px}
+.photo-hero{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:48px;align-items:center}
+.photo-hero h1{font-size:clamp(2rem,3.2vw,3.4rem)}
+.photo-hero .cleaning-photo img{aspect-ratio:4/3}
+a[href^="mailto:"]{overflow-wrap:anywhere}
+@media(max-width:980px){.photo-hero{grid-template-columns:1fr;gap:26px}.photo-hero .cleaning-photo{max-width:680px}.photo-hero h1{font-size:clamp(2rem,6vw,3.4rem)}}
+@media(max-width:680px){.photo-gallery{grid-template-columns:1fr;gap:24px}.photo-strip{padding:26px 0}.photo-hero .cleaning-photo img{aspect-ratio:3/2}}
+
+/* Comfortable heading scale across service, city and article pages. */
+.hero h1,.page-hero h1,.photo-hero h1{font-size:clamp(1.85rem,2.6vw,2.65rem);line-height:1.16;letter-spacing:-.025em;font-weight:700;text-wrap:balance}
+.hero h1{max-width:18ch}
+.hero p,.page-hero p{font-size:1.0625rem;line-height:1.65}
+.section-head h2,.content h2,.cta-band h2{font-size:clamp(1.5rem,2.1vw,2rem);line-height:1.25;letter-spacing:-.02em;text-wrap:balance}
+.feature-panel h3{font-size:1.5rem;line-height:1.3}
+.card h3,.content h3,.region-card h3{font-size:1.2rem;line-height:1.35}
+.quote-panel h2{font-size:1.35rem;line-height:1.3}
+.proof-card strong{font-size:1rem;line-height:1.4}
+.hero{padding:62px 0}
+.page-hero{padding:54px 0}
+.section{padding:64px 0}
+@media(max-width:680px){
+  .hero h1,.page-hero h1,.photo-hero h1{font-size:1.85rem;line-height:1.18}
+  .hero p,.page-hero p{font-size:1rem}
+  .hero,.page-hero{padding:40px 0}
+  .section{padding:44px 0}
+}
+
+/* Compact commercial brand and a single header call to action. */
+.logo{flex-direction:row;align-items:center;gap:10px;flex:0 0 245px}
+.logo .brand-mark{width:52px;height:52px;flex:0 0 52px}
+.logo .brand-name{display:flex;flex-direction:column;gap:6px;text-transform:none;letter-spacing:normal}
+.logo .brand-name strong{font-size:.98rem;line-height:1.15;letter-spacing:-.015em}
+.logo .brand-byline{font-size:.65rem;letter-spacing:.17em;line-height:1;color:#81612e}
+.article-photo{max-width:860px;padding-top:32px}
+.article-photo img{max-height:380px}
+.photo-hero .cleaning-photo img{object-position:center}
+@media(min-width:981px){.nav{gap:13px;font-size:.9rem}.header-inner{gap:15px}}
+@media(min-width:981px) and (max-width:1160px){.logo{flex-basis:218px}.nav{gap:9px;font-size:.82rem}.nav .btn{padding:0 13px}.logo .brand-name strong{font-size:.9rem}}
+@media(max-width:980px){.logo{flex:0 1 auto}.logo .brand-mark{width:46px;height:46px;flex-basis:46px}}
+@media(max-width:380px){.logo{gap:7px}.logo .brand-name strong{font-size:.84rem}.logo .brand-byline{font-size:.58rem}}
+
+/* Fobbs Pro green-and-cream direction. */
+:root{--navy:#123f38;--navy-2:#286457;--gold:#086b5b;--gold-2:#075547;--cream:#f8f8f0;--ink:#173f3a;--muted:#506d66;--line:#dbe5db;--radius:16px;--shadow:0 12px 32px rgba(18,63,56,.07)}
+body{background:var(--cream);color:var(--ink)}
+.site-header{background:#f8f8f0f5;border-color:#dde5dc}
+.topbar,.site-footer,.footer{background:#123f38}
+.hero,.page-hero{background:#f8f8f0;color:var(--navy)}
+.hero{padding:64px 0}
+.hero-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:60px}
+.hero h1{font-size:clamp(2rem,3.5vw,3.2rem);line-height:1.15;max-width:20ch;font-weight:650;letter-spacing:-.035em;text-wrap:initial}
+.hero h1 span{color:#528773}
+.hero .eyebrow,.page-hero .eyebrow{background:none;border:0;border-radius:0;padding:0;letter-spacing:.12em;font-size:.72rem;color:#123f38}
+.hero p,.page-hero p{color:#506d66}
+.hero-phone{display:inline-flex;align-items:center;font-weight:750;color:#123f38;padding:12px 4px;white-space:nowrap}
+.btn,.nav-cta{border-radius:5px;box-shadow:none}
+.btn-primary,.nav-cta{background:#086b5b;color:#fff;box-shadow:none}
+.btn-primary:hover,.nav-cta:hover{background:#075547}
+.logo{flex:0 0 260px;gap:13px}
+.brand-letter{display:grid!important;place-items:center;width:48px;height:52px;border-radius:3px;background:#086b5b;color:#fff!important;font-size:1.9rem!important;font-weight:800;letter-spacing:0!important;flex-shrink:0}
+.logo .brand-name strong{font-size:1.2rem;letter-spacing:.04em;line-height:1.1;color:#123f38}
+.logo .brand-byline{color:#123f38;font-size:.6rem;letter-spacing:.16em}
+.nav{font-weight:500;color:#123f38}
+.kicker,.card-kicker{color:#39725e}
+.section.alt,.trust-strip{background:#edf3eb;border-color:#dbe5db}
+.proof-card{background:transparent;border:0;border-radius:0;padding:8px 0}
+.proof-card strong{font-size:.94rem}
+.proof-card span{font-size:.86rem}
+.card,.info-card,.metric-item{border-color:#dbe5db;box-shadow:0 6px 22px rgba(18,63,56,.035)}
+.cta-band{background:#123f38}
+.feature-panel{background:#184d42}
+.feature-panel.soft-panel{background:#fff}
+.workplace-visual{position:relative;align-self:center;padding-bottom:24px}
+.workplace-visual>img{width:100%;height:auto;border-radius:6px 80px 6px 6px}
+.visual-note{position:absolute;left:24px;right:24px;bottom:0;background:#fffdf5;padding:20px 24px;box-shadow:var(--shadow);display:grid;gap:5px}
+.visual-note strong{font-size:1rem}.visual-note span{font-size:.8rem;color:var(--muted)}
+.inquiry-section{background:#edf3eb}
+.inquiry-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.inquiry-grid h2{font-size:2rem;line-height:1.2}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline-color:#286457}
+@media(max-width:980px){.hero-grid,.inquiry-grid{grid-template-columns:1fr;gap:32px}.workplace-visual{max-width:620px}.logo{flex:0 1 auto}.nav{font-weight:600}}
+@media(max-width:680px){.hero{padding:40px 0}.hero h1{font-size:2rem}.logo .brand-name strong{font-size:1.05rem}.logo .brand-byline{font-size:.52rem}.brand-letter{width:40px;height:46px}.visual-note{left:12px;right:12px;padding:16px}.inquiry-grid h2{font-size:1.6rem}}
+
+/* More visible Fobbs Pro identity and photographic homepage hero. */
+.header-inner{min-height:104px}
+.logo{flex:0 0 315px;gap:15px}
+.logo .brand-emblem{display:block;width:68px;height:68px;flex:0 0 68px}
+.logo .brand-name strong{font-size:1.65rem;letter-spacing:.045em;font-weight:850}
+.logo .brand-byline{font-size:.65rem;letter-spacing:.13em;margin-top:2px}
+.workplace-photo>img{width:100%;height:auto;aspect-ratio:64/53;object-fit:cover;object-position:center;border-radius:24px;background:#e5eee6}
+.workplace-photo .visual-note{bottom:0}
+.visual-note small{font-size:.67rem;color:#506d66}
+.visual-note small a{text-decoration:underline;text-underline-offset:2px}
+@media(min-width:981px) and (max-width:1160px){.logo{flex-basis:270px;gap:11px}.logo .brand-name strong{font-size:1.4rem}.logo .brand-emblem{width:60px;height:60px;flex-basis:60px}.logo .brand-byline{font-size:.56rem}}
+@media(max-width:980px){.header-inner{min-height:90px}.logo{flex:0 1 auto}.logo .brand-emblem{width:58px;height:58px;flex-basis:58px}.logo .brand-name strong{font-size:1.45rem}.logo .brand-byline{font-size:.6rem}}
+@media(max-width:440px){.logo{gap:10px}.logo .brand-emblem{width:50px;height:50px;flex-basis:50px}.logo .brand-name strong{font-size:1.2rem}.logo .brand-byline{font-size:.49rem}.workplace-photo>img{aspect-ratio:1/1}}
+
+.image-story{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:48px}
+.image-story h2{font-size:clamp(1.5rem,2.1vw,2rem);line-height:1.25}
+.image-story p{color:var(--muted)}
+.image-story .cleaning-photo img{aspect-ratio:4/3;object-fit:cover}
+.call-section{background:#edf3eb}
+.call-inner{display:flex;justify-content:space-between;align-items:center;gap:32px}
+.call-inner>div:first-child{max-width:650px}
+.call-inner h2{font-size:1.8rem;line-height:1.25}
+.call-inner .hero-actions{flex-shrink:0;flex-direction:column}
+.topbar a{font-weight:750;text-decoration:underline;text-underline-offset:3px}
+.medical-steps li{padding:12px 0}
+@media(max-width:980px){.image-story{grid-template-columns:1fr;gap:26px}.call-inner{display:block}.call-inner .hero-actions{flex-direction:row}}
+
+/* Keep the full service range visible without crowding the brand row. */
+.service-nav{background:#edf3eb;border-top:1px solid #dbe5db}
+.service-nav .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding-top:12px;padding-bottom:12px}
+.service-nav a{font-size:.88rem;font-weight:700;color:#123f38;line-height:1.5;padding:4px 0}
+.service-nav a:hover{text-decoration:underline;text-underline-offset:5px}
+@media(max-width:980px){.service-nav .wrap{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px 14px}.service-nav a{font-size:.8rem}.site-header{position:relative}}
+@media(max-width:480px){.service-nav .wrap{grid-template-columns:repeat(2,minmax(0,1fr))}.service-nav a{padding:5px 0}}
+
+/* Service photographs and fully visible before/after examples. */
+.comparison-photo{margin:24px 0;background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.comparison-photo img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:contain}
+.comparison-labels{display:grid;grid-template-columns:1fr 1fr;background:#123f38;color:#fff;text-align:center;font-weight:700}
+.comparison-labels span{padding:12px}.comparison-labels span+span{background:#286457}
+.comparison-photo figcaption{padding:14px 18px;font-size:.8rem;color:var(--muted);line-height:1.5}
+.transformation .wrap{max-width:1080px}.transformation .section-head{max-width:760px}
+.photo-hero .cleaning-photo img{aspect-ratio:3/2;object-fit:contain;background:#edf3eb}
+.photo-gallery .cleaning-photo img{aspect-ratio:3/2;object-fit:cover}
+@media(max-width:680px){.comparison-labels span{padding:9px;font-size:.86rem}.comparison-photo figcaption{font-size:.72rem}.transformation{padding:36px 0}}
